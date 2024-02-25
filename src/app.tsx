@@ -15,7 +15,7 @@ function App() {
           your overall health and well-being.
         </p>
 
-        <div className="bg-white p-6 rounded-2xl mt-12 flex flex-col gap-6">
+        <div className="bg-white p-6 rounded-2xl mt-12 mb-12 flex flex-col gap-6">
           <div className="flex flex-col gap-6">
             <h1 className="font-inter font-semibold text-2xl text-[#253347] antialiased">
               Enter your details below
