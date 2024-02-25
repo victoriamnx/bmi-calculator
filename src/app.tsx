@@ -31,18 +31,17 @@ function App() {
                 Imperial
               </label>
             </div>
-          </div>
-
+          </div>    
           <div className="flex flex-col ">
             <form action="" className="flex flex-col">
-              <label className="font-inter font-normal text-sm	text-[#5E6E85]">
+              <label className="font-inter font-normal text-sm	text-[#5E6E85] mb-2">
                 Height
               </label>
-              <input type="number" id="" name="" value="" className="border" />
-              <label className="font-inter font-normal text-sm	text-[#5E6E85]">
+              <input type="number" id="" name="" value="" className="border p-5 rounded-xl"/>
+              <label className="font-inter font-normal text-sm	text-[#5E6E85] mt-4 mb-2">
                 Weight
               </label>
-              <input type="number" id="" name="" value="" className="border" />
+              <input type="number" id="" name="" value="" className="border p-5 rounded-xl"/>
             </form>
           </div>
 
