@@ -1,8 +1,7 @@
 import Logo from "./components/images/logo.svg";
-import Photo from "./components/images/image-man-eating.webp";
-import HealthyEat from "./components/images/icon-eating.svg";
-import Exercise from "./components/images/icon-exercise.svg";
-import Sleep from "./components/images/icon-sleep.svg";
+import { Benefits } from "./components/benefits";
+import { BMIResult } from "./components/bmi_result";
+
 
 function App() {
   return (
@@ -86,50 +85,79 @@ function App() {
         </div>
       </div>
 
-      <div className="w-screen h-auto flex flex-col">
-        <img src={Photo} alt="" />
-        <div className="flex flex-col px-6 gap-8 mb-16">
-          <h1 className="font-inter font-semibold text-[#253347] text-3xl antialiased mt-12">
-            What your BMI result means
-          </h1>
-          <p className="font-inter font-normal text-[#5E6E85] text-base antialiased">
-            A BMI range of 18.5 to 24.9 is considered a 'healthy weight.'
-            Maintaining a healthy weight may lower your chances of experiencing
-            health issues later on, such as obesity and type 2 diabetes. Aim for
-            a nutritious diet with reduced fat and sugar content, incorporating
-            ample fruits and vegetables. Additionally, strive for regular
-            physical activity, ideally about 30 minutes daily for five days a
-            week.
-          </p>
-        </div>
-      </div>
+    <BMIResult/>
 
-      <div id="benefits" className="w-screen flex flex-col gap-10 px-6 py-14">
-        <div className="flex flex-col gap-6">
-          <img src={HealthyEat} alt="" className="w-16 h-16 " />
-          <h1> Healthy eating</h1>
+      <Benefits/>
+
+      <div className="flex flex-col px-6">
+        <div>
+          <h1> Limitations of BMI</h1>
           <p>
-            Healthy eating promotes weight control, disease prevention, better
-            digestion, immunity, mental clarity, and mood.
+            Although BMI is often a practical indicator of healthy weight, it is
+            not suited for every person. Specific groups should carefully
+            consider their BMI outcomes, and in certain cases, the measurement
+            may not be beneficial to use.
           </p>
         </div>
 
-        <div className="flex flex-col gap-6">
-          <img src={Exercise} alt="" className="w-16 h-16 " />
-          <h1> Regular exercise</h1>
-          <p>
-            Exercise improves fitness, aids weight control, elevates mood, and
-            reduces disease risk, fostering wellness and longevity.
-          </p>
-        </div>
-
-        <div className="flex flex-col gap-6">
-          <img src={Sleep} alt="" className="w-16 h-16 " />
-          <h1> Adequate sleep</h1>
-          <p>
-            Sleep enhances mental clarity, emotional stability, and physical
-            wellness, promoting overall restoration and rejuvenation.
-          </p>
+        <div>
+          <div>
+            <div>
+              <img src="" alt="" />
+              <h1>Gender</h1>
+            </div>
+            <p>
+              {" "}
+              The development and body fat composition of girls and boys vary
+              with age. Consequently, a child's age and gender are considered
+              when evaluating their BMI.
+            </p>
+          </div>
+          <div>
+            <div>
+              <img src="" alt="" />
+              <h1>Age</h1>
+            </div>
+            <p>
+              {" "}
+              In aging individuals, increased body fat and muscle loss may cause
+              BMI to underestimate body fat content.
+            </p>
+          </div>{" "}
+          <div>
+            <div>
+              <img src="" alt="" />
+              <h1>Muscle</h1>
+            </div>
+            <p>
+              BMI may misclassify muscular individuals as overweight or obese,
+              as it doesn't differentiate muscle from fat.
+            </p>
+          </div>
+          <div>
+            <div>
+              <img src="" alt="" />
+              <h1>Pregnancy</h1>
+            </div>
+            <p>
+              {" "}
+              Expectant mothers experience weight gain due to their growing
+              baby. Maintaining a healthy pre-pregnancy BMI is advisable to
+              minimise health risks for both mother and child.
+            </p>
+          </div>{" "}
+          <div>
+            <div>
+              <img src="" alt="" />
+              <h1>Race</h1>
+            </div>
+            <p>
+              {" "}
+              Certain health concerns may affect individuals of some Black and
+              Asian origins at lower BMIs than others. To learn more, it is
+              advised to discuss this with your GP or practice nurse.
+            </p>
+          </div>
         </div>
       </div>
     </div>
