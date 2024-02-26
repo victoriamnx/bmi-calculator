@@ -3,8 +3,9 @@
 @tailwind utilities;
 
 html {
-  background: #fff;
-}
+    background: rgb(255,255,255);
+    background: linear-gradient(149deg, rgba(255,255,255,1) 50%, rgba(216,226,231,1) 88%);
+    }
 
 #result {
   box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
