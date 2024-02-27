@@ -1,7 +1,11 @@
 import Logo from "./components/images/logo.svg";
 import { Benefits } from "./components/benefits";
 import { BMIResult } from "./components/bmi_result";
-
+import Gender from "./components/images/icon-gender.svg";
+import Age from "./components/images/icon-age.svg";
+import Muscle from "./components/images/icon-muscle.svg";
+import Pregnancy from "./components/images/icon-pregnancy.svg";
+import Race from "./components/images/icon-race.svg";
 
 function App() {
   return (
@@ -85,14 +89,14 @@ function App() {
         </div>
       </div>
 
-    <BMIResult/>
+      <BMIResult />
 
-      <Benefits/>
+      <Benefits />
 
-      <div className="flex flex-col px-6">
+      <div className="flex flex-col px-6 gap-14 mt-16 pb-24">
         <div>
-          <h1> Limitations of BMI</h1>
-          <p>
+          <h1 className="text-center"> Limitations of BMI</h1>
+          <p className="text-center">
             Although BMI is often a practical indicator of healthy weight, it is
             not suited for every person. Specific groups should carefully
             consider their BMI outcomes, and in certain cases, the measurement
@@ -100,10 +104,10 @@ function App() {
           </p>
         </div>
 
-        <div>
-          <div>
-            <div>
-              <img src="" alt="" />
+        <div className="flex flex-col gap-4">
+          <div className="p-6 bg-white rounded-2xl">
+            <div className="flex">
+              <img src={Gender} alt="" />
               <h1>Gender</h1>
             </div>
             <p>
@@ -113,9 +117,9 @@ function App() {
               when evaluating their BMI.
             </p>
           </div>
-          <div>
-            <div>
-              <img src="" alt="" />
+          <div className="p-6 bg-white rounded-2xl">
+            <div className="flex">
+              <img src={Age} alt="" />
               <h1>Age</h1>
             </div>
             <p>
@@ -124,9 +128,9 @@ function App() {
               BMI to underestimate body fat content.
             </p>
           </div>{" "}
-          <div>
-            <div>
-              <img src="" alt="" />
+          <div className="p-6 bg-white rounded-2xl">
+            <div className="flex">
+              <img src={Muscle} alt="" />
               <h1>Muscle</h1>
             </div>
             <p>
@@ -134,9 +138,9 @@ function App() {
               as it doesn't differentiate muscle from fat.
             </p>
           </div>
-          <div>
-            <div>
-              <img src="" alt="" />
+          <div className="p-6 bg-white rounded-2xl">
+            <div className="flex">
+              <img src={Pregnancy} alt="" />
               <h1>Pregnancy</h1>
             </div>
             <p>
@@ -146,9 +150,9 @@ function App() {
               minimise health risks for both mother and child.
             </p>
           </div>{" "}
-          <div>
-            <div>
-              <img src="" alt="" />
+          <div className="p-6 bg-white rounded-2xl">
+            <div className="flex">
+              <img src={Race} alt="" />
               <h1>Race</h1>
             </div>
             <p>
