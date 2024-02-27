@@ -2,7 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
-
+html {
+  height: screen;
+  background: rgba(216, 226, 231, 1);
+}
 
 #result {
   box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
@@ -23,7 +26,7 @@
   background: rgb(255, 255, 255);
   background: linear-gradient(
     149deg,
-    rgba(255, 255, 255, 1) 39%,
-    rgba(216, 226, 231, 1) 88%
+    rgba(255, 255, 255, 1) 50%,
+    rgba(229, 235, 245, 1) 88%
   );
 }
