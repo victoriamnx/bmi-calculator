@@ -1,10 +1,11 @@
-import Photo from "./images/image-man-eating.webp";
+import "./SecondSection.css";
+import ManEating from "../components/images//image-man-eating.webp";
 
-export function BMIResult() {
+export function SecondSection() {
   return (
-    <div className="w-screen h-auto flex flex-col">
-      <img src={Photo} alt="" />
-      <div className="flex flex-col px-6 gap-8 mb-16">
+    <section id="secondSection">
+      <img src={ManEating} alt="manEating" />
+      <div id="secondSection-1">
         <h1 className="font-inter font-semibold text-[#253347] text-3xl antialiased mt-12">
           What your BMI result means
         </h1>
@@ -17,6 +18,6 @@ export function BMIResult() {
           activity, ideally about 30 minutes daily for five days a week.
         </p>
       </div>
-    </div>
+    </section>
   );
 }
